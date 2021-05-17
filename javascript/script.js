@@ -3,7 +3,7 @@ const button = document.getElementById('btn');
 
 button.addEventListener('click', displayRecipe);
 
-function displayRecipe() {
+async function displayRecipe() {
     const res = await fetch(
         'https://www.themealdb.com/api/json/v1/1/random.php'
     );
